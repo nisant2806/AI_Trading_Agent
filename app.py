@@ -4,7 +4,7 @@ from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent 
 from dotenv import load_dotenv
 from langchain.tools import tool
-load_dotenv("app.env")
+load_dotenv(".env")
 
 api_key = os.environ["GEMINI_API_KEY"]
 model = init_chat_model(
